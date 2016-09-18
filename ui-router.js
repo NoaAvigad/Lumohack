@@ -6,7 +6,7 @@ myApp.config(function ($routeProvider) {
 
   $routeProvider
 
-    .when('/main', {
+    .when ('/', {
       templateUrl: 'templates/main.html'
     })
 
@@ -17,10 +17,6 @@ myApp.config(function ($routeProvider) {
     .when('/messaging', {
       templateUrl: 'templates/messaging.html'
     })
-
-    .otherwise({
-      redirectTo: '/main'
-    });
 
 });
 
