@@ -1,1 +1,1 @@
-ngular.module('myApp', ['ngRoute', 'ui-router.js', 'MainCtrl', 'NerdService']);
+angular.module('myApp', ['ngRoute', 'appRoutes', 'MainController', 'NerdService']);

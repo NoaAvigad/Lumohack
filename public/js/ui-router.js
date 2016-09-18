@@ -5,8 +5,8 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
     $routeProvider
 
     .when('/main', {
-      templateUrl: '../views/main.html'
-      controller: 'controllers/MainController.js'	
+      templateUrl: '../views/main.html',
+      controller: 'MainController'
     })
 
     .when('/profile', {
@@ -19,6 +19,6 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 
    $locationProvider.html5Mode(true);
 
-});
+}]);
 
   

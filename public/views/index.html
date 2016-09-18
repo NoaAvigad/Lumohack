@@ -1,53 +1,37 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
-	
-        <meta charset="UTF-8">
-        <title>Lumohacks</title>
-        
-        
-        
-        <!-- CSS -->
-        <link rel="stylesheet" href="../libs/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/style.css">
-        <!-- custom styles -->
-        
-         <link rel="stylesheet" type="text/css" href="../css/style.css">
-        
-        <!-- JS -->
-        <script src="../libs/angular/angular.min.js"></script>
-        <script src="../libs/angular-route/angular-route.min.js"></script>
-        
-        <!-- ANGULAR CUSTOM -->
-        <script src="../js/controllers/MainCtrl.js"></script>
-        <script src="../js/controllers/NerdCtrl.js"></script>
-        <script src="../js/services/NerdService.js"></script>
-        <script src="../js/ui-router.js"></script>
-        <script src="../js/app.js"></script>
-		
-	</head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <title>Lumohacks</title>
 
-	<body ng-app="myApp" ng-controller="NerdController">
-		<div class="container" id="header">
-    		
-            <div style="clear:both"></div>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../libs/bootstrap/dist/css/bootstrap.min.css">
 
-    		<ul id="navigation">
-        		<li><a class="active" href="/main">Main</a></li>
-        		<li><a href="/profile">Profile</a></li>
-        		<li><a href="/messaging">Messaging</a></li>
-    		</ul>
+    <!-- JS -->
+    <script src="../libs/angular/angular.min.js"></script>
+    <script src="../libs/angular-route/angular-route.min.js"></script>
 
-		</div><!--end header -->
+    <!-- ANGULAR CUSTOM -->
+    <script src="../js/controllers/MainController.js"></script>
+    <!--<script src="../js/controllers/NerdCtrl.js"></script>-->
+    <script src="../js/services/NerdService.js"></script>
+    <script src="../js/ui-router.js"></script>
+    <script src="../js/app.js"></script>
 
-        <div ng-view ></div>
+</head>
 
-<div style="clear:both"></div>
+<body ng-app="myApp" ng-controller="MainController">
+<div class="container">
+    <nav class="navbar navbar-inverse">
+        <ul class="nav navbar-nav">
+            <li><a class="active" href="/main">Main</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="/messaging">Messaging</a></li>
+        </ul>
+    </nav>
+    <div ng-view></div>
+</div>
 
-		<div id="footer">
-        	<div class="container">
-        	</div><!--end footer container-->
-    	</div><!--end footer-->
-
-	</body>
+</body>
 </html>
