@@ -1,0 +1,64 @@
+body, div, h1, h2, h3, h4, h5, h6, p, ul, img {margin:0px; padding:0px; }
+
+body { 
+	font-family: Cambria, Arial, sans-serif; 
+	background: #e6ffe6;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto; 
+    text-align: right;
+}
+
+#tagline {
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px; 
+}
+
+#content: {
+    background-color: #e5fee2;
+}
+
+/*navigation bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+/* figure out how to make only the clicked one active */
+.active {
+    background-color: #4CAF50;
+}
+
+/* end navigation bar*/
+
+#footer {
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
