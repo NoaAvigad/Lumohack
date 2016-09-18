@@ -1,13 +1,12 @@
 'use strict'
 
-var myApp = angular.module('myApp', ['ngRoute']); 
+angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
-myApp.config(function ($routeProvider) {
-
-  $routeProvider
+    $routeProvider
 
     .when('/main', {
-      templateUrl: 'templates/main.html'
+      templateUrl: '../views/main.html'
+      controller: 'controllers/MainController.js'	
     })
 
     .when('/profile', {
@@ -16,11 +15,9 @@ myApp.config(function ($routeProvider) {
 
     .when('/messaging', {
       templateUrl: 'templates/messaging.html'
-    })
-
-    .otherwise({
-      redirectTo: '/main'
     });
+
+   $locationProvider.html5Mode(true);
 
 });
 

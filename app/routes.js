@@ -26,7 +26,7 @@ Nerd.find(function(err, nerds) {
 
 // frontend routes
 // route to ahndlw all angular requests
-app.get('*', fundtion(req, res) {
+app.get('*', function(req, res) {
 res.sendfile('./public/views/index.html'); // load our index.html file
 });
 
